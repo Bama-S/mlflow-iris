@@ -1,0 +1,15 @@
+artifact_uri: file:///home/bama/Documents/courses/_2025/mlops/mlflow-iris/mlruns/586337218284226688/770ea6ab8441441f8dbfb2d23c134306/artifacts
+end_time: 1744020580697
+entry_point_name: ''
+experiment_id: '586337218284226688'
+lifecycle_stage: active
+run_id: 770ea6ab8441441f8dbfb2d23c134306
+run_name: dashing-cod-982
+run_uuid: 770ea6ab8441441f8dbfb2d23c134306
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744020577490
+status: 3
+tags: []
+user_id: bama

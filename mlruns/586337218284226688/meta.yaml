@@ -1,6 +1,0 @@
-artifact_location: file:///home/bama/Documents/courses/_2025/mlops/mlflow-iris/mlruns/586337218284226688
-creation_time: 1744020577448
-experiment_id: '586337218284226688'
-last_update_time: 1744020577448
-lifecycle_stage: active
-name: Iris_Classifier

@@ -15,7 +15,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: 3.10
+        python-version: 3.10  # ✅ Use supported version
 
     - name: Install dependencies
       run: |
@@ -29,4 +29,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: iris-mlflow-artifacts
-        path: /tmp/mlruns  # Matches mlflow.set_tracking_uri
+        path: /tmp/mlruns

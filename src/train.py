@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
 # Set MLflow to use the local folder
-mlflow.set_tracking_uri("file://" + os.path.abspath("mlruns"))
+#mlflow.set_tracking_uri("file://" + os.path.abspath("mlruns"))
 mlflow.set_experiment("Iris_Classifier")
 
 # Load Iris dataset

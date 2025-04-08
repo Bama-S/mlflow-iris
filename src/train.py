@@ -6,11 +6,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
-# Safe local logging
+# ✅ Safe for GitHub Actions
 mlflow.set_tracking_uri("file:" + os.path.abspath("mlruns"))
 mlflow.set_experiment("Iris_Classifier")
 
-# Load data
+# Load Iris data
 iris = datasets.load_iris()
 X_train, X_test, y_train, y_test = train_test_split(
     iris.data, iris.target, test_size=0.3, random_state=42
@@ -25,5 +25,6 @@ with mlflow.start_run():
     mlflow.sklearn.log_model(clf, "model")
     mlflow.log_metric("accuracy", acc)
 
-    print(f"Accuracy: {acc}")
+    print(f"✅ Accuracy: {acc}")
+
 

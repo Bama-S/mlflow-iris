@@ -26,7 +26,7 @@ jobs:
         python src/train.py
 
     - name: Upload MLflow Artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: iris-mlflow-artifacts
         path: /tmp/mlruns  # Matches mlflow.set_tracking_uri

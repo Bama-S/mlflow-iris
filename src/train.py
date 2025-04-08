@@ -23,7 +23,7 @@ with mlflow.start_run():
     predictions = clf.predict(X_test)
     acc = accuracy_score(y_test, predictions)
 
-    mlflow.sklearn.log_model(clf, "model")
+    mlflow.sklearn.save_model(clf, "outputs/model")  # ✅ Save for CI/CD
     mlflow.log_metric("accuracy", acc)
 
     print(f"✅ Accuracy: {acc}")

@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
 # ✅ Safe for GitHub Actions
-mlflow.set_tracking_uri("file:" + os.path.abspath("mlruns"))
+mlflow.set_tracking_uri("file:mlruns")
 mlflow.set_experiment("Iris_Classifier")
 
 # Load Iris data
